@@ -26,22 +26,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <h1>Listass</h1>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Label textoss</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="list-group">
-                    <a href="#" class="list-group-item aactive">
-                        Texto de enlace
-                    </a>
-                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item">Morbi leo risus</a>
-                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                    <a href="#" class="list-group-item">Vestibulum at eros</a>
-                </div>
-            </div>
+            <list-group :listdata="lista"></list-group>
         </div>      
     </div>
 
@@ -55,8 +40,21 @@
             <p>Total: <span class="badge">{{ counter }}</span></p>
         </div>
     </template>
+
+    <template id="list-group-template">
+        <div class="col-sm-12">
+            <h1>Listass</h1>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Label textoss</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" v-model="newItem" @keyup.enter="addItem">
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item aactive" v-for="item in listdata">{{ item }}</a>
+            </div>
+        </div>
+    </template>
     
     <script src="node_modules/vue/dist/vue.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app-fin.js"></script>
 </body>
 </html> 

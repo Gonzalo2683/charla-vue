@@ -19,6 +19,22 @@ Vue.component('img-compo', {
     }
 });
 
+Vue.component('list-group', {
+    template: '#list-group-template',
+    props: ['listdata'],
+    data: function(){
+        return {
+            newItem: ''
+        }
+    },
+    methods: {
+        addItem: function () {
+            this.listdata.push(this.newItem);
+            this.newItem = '';
+        }
+    }
+});
+
 new Vue({
     el: '#app',
     data: {
@@ -28,7 +44,8 @@ new Vue({
             {title: 'Imagen 3', url: 'images/3.jpg'},
             {title: 'Imagen 4', url: 'images/4.jpg'},
             {title: 'Imagen 5', url: 'images/5.jpg'}
-        ]
+        ],
+        lista : ['Texto']
     },
     methods: {
         notificar: function(data){
