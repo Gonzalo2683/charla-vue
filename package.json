@@ -1,0 +1,19 @@
+{
+  "name": "vue-charla",
+  "version": "1.0.0",
+  "description": "Charla vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server --files .*/**/* "
+  },
+  "author": "Gonzalo Guevara",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.3.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
+  }
+}
