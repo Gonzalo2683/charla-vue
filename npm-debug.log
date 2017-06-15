@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\Nodist\\v-x64\\6.9.4\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@4.0.5
+3 info using node@v6.9.4
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle vue-charla@1.0.0~predev: vue-charla@1.0.0
+6 silly lifecycle vue-charla@1.0.0~predev: no script for predev, continuing
+7 info lifecycle vue-charla@1.0.0~dev: vue-charla@1.0.0
+8 verbose lifecycle vue-charla@1.0.0~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle vue-charla@1.0.0~dev: PATH: C:\Program Files (x86)\Nodist\npmv\4.0.5\bin\node-gyp-bin;C:\Users\Gonzalo Guevara\Desktop\charlita\charla-vue\node_modules\.bin;C:\Program Files (x86)\Nodist\v-x64\6.9.4;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Gonzalo Guevara\bin;C:\Users\Gonzalo Guevara\AppData\Local\Programs\Python\Python35\;C:\Users\Gonzalo Guevara\AppData\Local\Programs\Python\Python35\Scripts\;C:\drupalconsole\drupal.phar;C:\curl-7.54.0\bin;C:\Users\Gonzalo Guevara\AppData\Roaming\Composer\vendor\bin;C:\Hugo\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\iis express\PHP\v5.4;C:\Program Files (x86)\Firefox Developer Edition;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Sublime Text 2;C:\Program Files\TortoiseHg\;C:\urutools;C:\ProgramData\ComposerSetup\bin;C:\Users\Gonzalo Guevara\AppData\Roaming\npm;C:\Ruby193\bin;C:\ProgramData\Drush\;C:\Program Files (x86)\Drush\GnuWin32\bin;C:\Program Files (x86)\Drush\Php;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\Nodist\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\DevDesktop\tools;C:\Users\Gonzalo Guevara\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Gonzalo Guevara\AppData\Local\Programs\Python\Python35\;C:\Users\Gonzalo Guevara\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta7\bin;C:\Users\Gonzalo Guevara\.dnx\bin;C:\Ruby193\bin;C:\ProgramData\Drush\;C:\Program Files (x86)\Drush\GnuWin32\bin;C:\Program Files (x86)\Drush\Php;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Program Files\Heroku\bin;C:\Users\Gonzalo Guevara\AppData\Roaming\npm;C:\Users\Gonzalo Guevara\AppData\Local\Yarn\.bin
+10 verbose lifecycle vue-charla@1.0.0~dev: CWD: C:\Users\Gonzalo Guevara\Desktop\charlita\charla-vue
+11 silly lifecycle vue-charla@1.0.0~dev: Args: [ '/d /s /c',
+11 silly lifecycle   'browser-sync start --server --files ./index.html ./js/app.js' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1022:11)
+12 verbose stack     at process.kill (internal/process.js:172:13)
+12 verbose stack     at process.listener (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+13 verbose cwd C:\Users\Gonzalo Guevara\Desktop\charlita\charla-vue
+14 error Windows_NT 6.1.7601
+15 error argv "C:\\Program Files (x86)\\Nodist\\v-x64\\6.9.4\\node.exe" "C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js" "run" "dev"
+16 error node v6.9.4
+17 error npm  v4.0.5
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

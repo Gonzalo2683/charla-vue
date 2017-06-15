@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Componentes</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        .red {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="row">
+            <!--<img-compo :imageurl="imagenes[0].url" :alttitle="imagenes[0].title"></img-compo>
+            <img-compo :imageurl="imagenes[1].url" :alttitle="imagenes[1].title"></img-compo>
+            <img-compo :imageurl="imagenes[2].url" :alttitle="imagenes[2].title"></img-compo>   -->
+        </div>
+        <div>
+            <div class="row">
+                <img-compo v-for="img in imagenes" :imageurl="img.url" :alttitle="img.title" @mayor="notificar"></img-compo>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Listass</h1>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Label textoss</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item aactive">
+                        Texto de enlace
+                    </a>
+                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item">Morbi leo risus</a>
+                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <!-- TEMPLATES -->
+    <template id="img-compo-template">
+        <div class="col-xs-4 col-md-4">
+            <div class="thumbnail" :class="{red: esmayor}">
+                <img :src="imageurl" :alt="alttitle" @click="countClick"> 
+                {{ test }}
+            </div>
+            <p>Total: <span class="badge">{{ counter }}</span></p>
+        </div>
+    </template>
+    
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
